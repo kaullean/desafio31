@@ -1,0 +1,52 @@
+config:
+  target: 'http://localhost:8080'
+  phases:
+    - duration: 1
+      arrivalRate: 50
+      name: Warm up
+
+scenarios:
+  - name: 'Cada cliente le pega al endpoint /info 20 veces'
+    flow:
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      - get:
+          url: '/info'
+      
+
